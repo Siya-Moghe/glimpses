@@ -1,0 +1,108 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #eee5e5;
+}
+
+header {
+    margin: 20px 0;
+    font-family: 'Brush Script MT', cursive;
+    flex-grow: 1;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #555;
+}
+
+/* Grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Button styling */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #eee5e5; /* Button color */
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 10px; /* Spacing between buttons */
+    width: 150px; /* Optional width to make all buttons equal size */
+}
+
+.button:hover {
+    background-color: #6f5656; /* Hover color */
+}
+
+.grid_words {
+    background-color: #eee5e5;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Specific background images */
+.signup-login {
+    background-image: url('../assets/signup-login.png');
+    /* Vertical layout for SIGN UP and LOGIN buttons */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_us {
+    background-image: url('../assets/about-us.png');
+}
+
+.share {
+    background-image: url('../assets/share.png');
+}
+
+.memories {
+    background-image: url('../assets/memories.png');
+}
+
+.highlights {
+    background-image: url('../assets/highlights.png');
+}
+
+.slice {
+    background-image: url('../assets/slice.png');
+}

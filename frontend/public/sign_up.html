@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signing.css">
+    <script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="title">glimpses</h1>
+    </header>
+
+    <div class="outer-container"></div>
+
+    <script type="text/babel">
+        class SignUp extends React.Component {
+            constructor(){
+                super();
+            }
+
+            render(){
+                return(<
+                div class="middle-container">
+                    <div class="inner-container">
+                        <h2>Sign Up</h2>
+                        <form action="#">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required/>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required/>
+
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required/>
+
+                            <label for="confirm-password">Confirm Password:</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required/>
+
+                            <button type="submit">SUBMIT</button>
+                        </form>
+                    <br/>
+                    <p>Already Have An Account? <a href="login.html">LogIn</a></p>
+                </div>
+            </div>);
+            }
+        }
+    </script>
+</body>
+</html>

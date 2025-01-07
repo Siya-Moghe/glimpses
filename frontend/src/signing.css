@@ -1,0 +1,140 @@
+/* Title section */
+header {
+    text-align: center;
+    margin-bottom: 10px; /* Reduce the gap below header */
+    padding: 0;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 500;
+    color: black;
+    font-family: 'Brush Script MT', cursive;
+}
+
+/* Outer container */
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    background-color: #eee5e5;
+    border-bottom: 2px solid #6f5656;
+    width: 100%;
+    margin-top: 0; /* Ensure no gap between header and container */
+}
+
+/* Middle container */
+.middle-container {
+    background-color: #bb8588;
+    margin-left: 50% ; /* Center horizontally */
+    padding: 20px 5%;
+    border-radius: 15px;
+    max-width: 500px; /* Limit width for better layout */
+    width: 90%; /* Responsive width */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* Center contents */
+}
+
+/* Inner container */
+.inner-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    max-width: 350px; /* Limit inner container width */
+    margin: 0 auto; /* Center horizontally */
+}
+
+/* Heading */
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #0c0a0d;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form styling */
+label {
+    display: block;
+    font-size: 1rem;
+    color: #4b0082;
+    margin: 12px 0 6px;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #d1d1d1;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #090809;
+    outline: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #380412;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #680b24;
+}
+
+/* Link styling */
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    color: #4b0082;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .middle-container {
+        max-width: 90%; 
+        padding: 20px;
+    }
+
+    .inner-container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .middle-container {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .inner-container {
+        max-width: 100%;
+    }
+}

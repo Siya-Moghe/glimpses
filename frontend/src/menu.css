@@ -1,0 +1,53 @@
+
+/* Initially hide the side menu off-screen */
+.side-menu {
+    position: fixed; /* Fixed position to stay in view */
+    top: 0;
+    left: -300px; /* Hide it off-screen */
+    width: 200px;
+    height: 100%; /* Make it full height */
+    background-color: #380412;
+    border-radius: 0 15px 15px 0; /* Rounded corners on the right */
+    padding: 10px;
+    transition: left 0.3s ease; /* Transition effect for sliding */
+}
+
+/* Show the menu when active */
+.side-menu.active {
+    left: 0; /* Slide in by setting left to 0 */
+}
+
+.side-menu ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.side-menu ul li {
+    margin-bottom: 15px; /* Increase space between links */
+}
+
+.side-menu ul li a {
+    color: white; /* Change text color to white */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px;
+    display: block;
+    background-color: #555;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.side-menu ul li a:hover {
+    background-color: #666; /* Hover effect */
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px; 
+    cursor: pointer;
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+}
